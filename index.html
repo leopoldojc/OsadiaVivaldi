@@ -7,94 +7,15 @@
     <meta property="og:image" content="URL_DE_LA_IMAGEN">
     <meta property="og:url" content="https://leopoldojc.github.io/OsadiaVivaldi/">
     <meta property="og:type" content="website">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url(https://cdn.discordapp.com/attachments/1075309289499017286/1106488508786425866/Leojc_Crea_una_imagen_con_una_iluminacion_cinematografica_que_r_bca5b269-2f43-4903-a723-1429d3418d17.png) no-repeat center fixed;
-            background-size: cover;
-            background-color: rgba(255, 165, 0, 0.7); /* Color naranja de fondo con transparencia */
-            color: #fff;
-        }
-
-        nav {
-            background-color: #FF7F00; /* Un tono de naranja más oscuro para la barra de navegación */
-            padding: 15px 0;
-        }
-
-        .menu {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
-
-        .menu li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        .menu a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 15px;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        p, ul {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
-        a {
-            color: #fff;
-            text-decoration: underline;
-        }
-
-        .container#inicio {
-            background-color: rgba(255, 165, 0, 0.9); /* Color naranja de la sección de inicio con transparencia */
-        }
-
-        .container#acerca {
-            background-color: rgba(255, 140, 0, 0.9); /* Color naranja más oscuro de la sección acerca de con transparencia */
-        }
-
-        .container#metodo {
-            background-color: rgba(255, 165, 0, 0.9); /* Color naranja de la sección de método con transparencia */
-        }
-
-        .container#recursos {
-            background-color: rgba(255, 140, 0, 0.9); /* Color naranja más oscuro de la sección de recursos con transparencia */
-        }
-
-        .container#unete {
-            background-color: rgba(255, 165, 0, 0.9); /* Color naranja de la sección de unión con transparencia */
-        }
-
-        #header {
-            height: 300px;
-            margin-bottom: 2em;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div id="audio-container">
         <p>¡Audio de bienvenida! Dale play</p>
-       <audio controls>
-  <source src="https://drive.google.com/uc?export=download&id=1T6omIYrrBKrORjFpjUhruwL6ApcKO-io" type="audio/mpeg">
-  Tu navegador no admite la reproducción de audio.
-</audio>
-
-
+        <audio controls>
+            <source src="URL_DEL_AUDIO" type="audio/mpeg">
+            Tu navegador no admite la reproducción de audio.
+        </audio>
     </div>
 
     <div id="header"></div>
@@ -108,32 +29,53 @@
             <li><a href="#unete">Únete</a></li>
         </ul>
     </nav>
+    
     <div class="container" id="inicio">
-        <!-- Aquí iría el contenido de la sección de inicio -->
+        <!-- Contenido de la sección de inicio -->
     </div>
+    
     <div class="container" id="acerca">
         <h2>Acerca de</h2>
         <p>Soy Leopoldo Jaramillo, creador de Osadía Vivaldi. Trabajo como auxiliar de geriatría y, aunque no tengo un título universitario en economía ni en programación, estoy constantemente aprendiendo y mejorándome a través de cursos y certificaciones en Platzi. Algunos de los cursos que he completado incluyen Inteligencia Emocional, Gestión del Estrés, Habilidades Blandas, Programación Básica y Diseño de Imágenes con Inteligencia Artificial. También he completado cursos de inversión, análisis de riesgo bursátil y toma de decisiones, introducción al análisis técnico del mercado financiero, cómo armar un portafolio de inversión, introducción al trading, cómo invertir en bolsa: análisis fundamental, presupuesto y flujo de caja, economía del comportamiento, creatividad financiera, finanzas personales para tiempos de crisis, motivación para equipos de trabajo, liderazgo intermedio, inteligencia emocional para líderes y cómo manejar tu deuda. Decidí tomar el control de mi vida financiera después de descubrir que iba a ser padre. He aprendido que no se necesita un título específico para aprender a invertir y manejar el dinero, solo el deseo de aprender y adaptarse a los cambios.</p>
     </div>
+    
     <div class="container" id="metodo">
         <h2>Método</h2>
         <p>He descubierto que cada centavo cuenta. Cuando cobras tu sueldo, es importante pagarte a ti mismo primero. Te sugiero destinar al menos un 20% de tu salario, dividiéndolo a la mitad para ahorrar y la otra mitad para invertir.</p>
         <p>Es recomendable no ahorrar más de un año, ya que la inflación puede afectar el valor de tu dinero. Para combatir la inflación, la mejor estrategia es invertir. Puedes considerar invertir en la bolsa de valores o adquirir materiales preciosos. También, si tienes la oportunidad, invertir en propiedades para alquilar puede ser una buena opción.</p>
-        <p>Recuerda que  es importante que estas decisiones de ahorro e inversión se comprendan fácilmente para garantizar un manejo adecuado de las finanzas personales.</p>
-    </div>
-    <div class="container" id="recursos">
-        <h2>Recursos</h2>
-        <p>A lo largo de mi viaje, he encontrado una serie de recursos útiles que me han ayudado a entender mejor las finanzas y la inversión. Algunos de estos recursos incluyen:</p>
-        <ul>
-            <li><strong>Libros:</strong> "Pensar rápido, pensar despacio" por Daniel Kahneman, "Padre rico, padre pobre" por Robert Kiyosaki, "Ten peor coche que tu vecino" por Luis Pita.</li>
-            <li><strong>Platzi:</strong> Me he beneficiado enormemente de los cursos de Platzi, una plataforma de aprendizaje en línea que ofrece cursos en una variedad de temas, incluyendo programación, diseño y negocios. <a href="https://platzi.com/r/leopoldojaramillo">Haz clic aquí para obtener un mes gratis en tu suscripción a Platzi.</a></li>
-            <li><strong>YouTube:</strong> Publico regularmente vídeos en mi <a href="https://www.youtube.com/channel/UCwPwdi03JkzavDdl5Qc-n_g">canal de YouTube</a> sobre finanzas y mi método.</li>
-        </ul>
-    </div>
-    <div class="container" id="unete">
-        <h2>Únete a mi equipo</h2>
-        <p>Si estás interesado en colaborar conmigo y ayudar a crecer este proyecto, por favor, ponte en contacto conmigo a través de <a href="mailto:leopoldojaramillo@gmail.com">leopoldojaramillo@gmail.com</a>. ¡Estoy deseando trabajar contigo!</p>
-    </div>
-
-</body>
-</html>
+        <p>Recuerda que es importante que estas decisiones de ahorro e inversión se comprendan fácilmente para garantizar un manejo adecuado de las finanzas personales.</p>
+        </div>
+        <div class="container" id="recursos">
+            <h2>Recursos</h2>
+            <p>A lo largo de mi viaje, he encontrado una serie de recursos útiles que me han ayudado a entender mejor las finanzas y la inversión. Algunos de estos recursos incluyen:</p>
+            <ul>
+                <li><strong>Libros:</strong> "Pensar rápido, pensar despacio" por Daniel Kahneman, "Padre rico, padre pobre" por Robert Kiyosaki, "Ten peor coche que tu vecino" por Luis Pita.</li>
+                <li><strong>Platzi:</strong> Me he beneficiado enormemente de los cursos de Platzi, una plataforma de aprendizaje en línea que ofrece cursos en una variedad de temas, incluyendo programación, diseño y negocios. <a href="https://platzi.com/r/leopoldojaramillo">Haz clic aquí para obtener un mes gratis en tu suscripción a Platzi.</a></li>
+                <li><strong>YouTube:</strong> Publico regularmente vídeos en mi <a href="https://www.youtube.com/channel/UCwPwdi03JkzavDdl5Qc-n_g">canal de YouTube</a> sobre finanzas y mi método.</li>
+            </ul>
+        </div>
+        
+        <div class="container" id="contacto">
+            <h2>Contacto</h2>
+            <form action="/submit_contact" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+        
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+        
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        
+        <div class="container" id="unete">
+            <h2>Únete a mi equipo</h2>
+            <p>Si estás interesado en colaborar conmigo y ayudar a crecer este proyecto, por favor, ponte en contacto conmigo a través de <a href="mailto:leopoldojaramillo@gmail.com">leopoldojaramillo@gmail.com</a>. ¡Estoy deseando trabajar contigo!</p>
+        </div>
+        
+        <script src="scripts.js"></script>
+    </body>
+    </html>    
