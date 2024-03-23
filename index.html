@@ -47,20 +47,18 @@
             background: linear-gradient(to right, #000, #FF7F00);
             color: #fff;
             padding: 20px;
-            position: relative;
+            position: relative; /* Permite posicionar elementos hijos relativos a este */
         }
 
         .copyright {
-            font-size: 0.8em;
-            margin-top: 10px;
+            position: absolute; /* Posiciona el texto de derechos reservados de forma absoluta */
+            bottom: 10px; /* Ajusta la distancia desde abajo */
+            left: 50%; /* Centra horizontalmente */
+            transform: translateX(-50%); /* Centra horizontalmente */
         }
 
-        .logo {
-            max-width: 100px; /* Tamaño adecuado para la imagen */
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
+        .copyright img {
+            max-width: 100px; /* Ajusta el tamaño máximo de la imagen */
         }
     </style>
 </head>
@@ -72,8 +70,10 @@
     <p>Contenido de la página...</p>
     
     <footer>
-        <p class="copyright">© Todos los derechos reservados - 2024</p>
-        <img src="https://i.imgur.com/jPy2AiF.jpg" alt="Logo" class="logo">
+        <div class="copyright">
+            <p>&copy; 2024 Todos los derechos reservados</p>
+        </div>
+        <img src="ruta_de_la_imagen.jpg" alt="Descripción de la imagen">
     </footer>
 </body>
 </html>
