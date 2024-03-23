@@ -14,18 +14,19 @@
             padding: 0;
             color: #333;
             text-align: center;
-            background: linear-gradient(to right, #FF7F00, #FF7F00);
+            background: linear-gradient(to right, #FFD700, #FFA500);
         }
 
         header {
-            background: linear-gradient(to right, #FF7F00, #000);
+            background: linear-gradient(to right, #FFD700, #000);
             padding: 50px 0;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 4em;
             margin-bottom: 20px;
             color: #fff;
+            text-transform: uppercase;
         }
 
         p {
@@ -36,11 +37,12 @@
             background-color: rgba(255, 255, 255, 0.9);
             color: #333;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
 
         footer {
-            background: linear-gradient(to right, #000, #FF7F00);
+            background: linear-gradient(to right, #000, #FFD700);
             color: #fff;
             padding: 20px 0;
         }
@@ -48,25 +50,25 @@
         .testimonial {
             font-style: italic;
             margin-bottom: 20px;
-        }
-
-        .contact-form {
-            margin-top: 20px;
+            color: #FFD700;
         }
 
         .cta-button {
-            background-color: #FF7F00;
+            background-color: #FFD700;
             color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 15px 30px;
+            border-radius: 30px;
             text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
         }
 
         .blog-section {
-            background-color: #FF7F00;
+            background-color: #FFD700;
             color: #fff;
-            padding: 20px;
+            padding: 30px;
             margin-top: 20px;
+            border-radius: 20px;
         }
 
         .social-links {
@@ -74,22 +76,14 @@
         }
 
         .social-link {
-            color: #FF7F00;
-            margin-right: 10px;
+            color: #FFD700;
+            margin-right: 20px;
         }
 
         .logo {
-            max-width: 80px;
-            margin: 20px auto;
-        }
-
-        a {
-            color: #FF7F00;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+            max-width: 100px;
+            margin: 40px auto;
+            border-radius: 50%;
         }
     </style>
 </head>
@@ -97,41 +91,12 @@
     <header>
         <h1>Osadía Vivaldi</h1>
     </header>
-
-    <p>En el corazón de 2024, Osadía Vivaldi se destaca como un símbolo de innovación y bienestar integral. Descubre nuestra gama de productos y servicios diseñados para tu salud y felicidad.</p>
-
-    <div class="testimonial">"¡La mejor experiencia de bienestar que he tenido! Recomiendo Osadía Vivaldi a todos mis amigos y familiares."</div>
-
-    <div class="contact-form">
-        <form>
-            <label for="name">Nombre:</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="message">Mensaje:</label><br>
-            <textarea id="message" name="message"></textarea><br><br>
-            <input type="submit" value="Enviar">
-        </form>
-    </div>
-
-    <a href="#" class="cta-button">Comprar ahora</a>
-
-    <div class="blog-section">
-        <h2>Últimas Noticias</h2>
-        <p>¡Mantente al tanto de nuestras últimas novedades y consejos de bienestar en nuestro blog!</p>
-    </div>
-
-    <div class="social-links">
-        Síguenos en redes sociales:
-        <a href="#" class="social-link">Facebook</a>
-        <a href="#" class="social-link">Instagram</a>
-        <a href="#" class="social-link">Twitter</a>
-    </div>
+    
+    <p>Descubre la innovación y el bienestar integral en Osadía Vivaldi, un faro de calidad y sostenibilidad.</p>
 
     <footer>
-        Todos los derechos reservados &copy; Osadía Vivaldi
+        <p class="testimonial">"La mejor experiencia de bienestar que he tenido. ¡Altamente recomendado!"</p>
+        <a href="#" class="cta-button">¡Reserva ahora!</a>
     </footer>
-
-    <img src="https://i.imgur.com/jPy2AiF.jpg" alt="Logo Osadía Vivaldi" class="logo">
 </body>
 </html>
