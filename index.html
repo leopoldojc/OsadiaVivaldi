@@ -2,36 +2,72 @@
 <html>
 <head>
     <title>Osadía Vivaldi: La Esencia del Bienestar</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+            background: linear-gradient(to right, #FFD700, #FFA500);
+        }
+
+        header {
+            background: linear-gradient(to right, #FFD700, #DAA520);
+            padding: 50px 0;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: linear-gradient(to right, #DAA520, #FFD700);
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .cta-button {
+            background-color: #DAA520;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #FFD700;
+        }
+    </style>
 </head>
 <body>
-    <h1>Contacto</h1>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" autocomplete="off"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" autocomplete="off"><br>
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje"></textarea><br>
-        <input type="submit" value="Enviar">
-    </form>
+    <header>
+        <h1>Osadía Vivaldi</h1>
+        <p>Descubre la innovación y el bienestar integral en Osadía Vivaldi, un faro de calidad y sostenibilidad.</p>
+        <a href="mailto:leopoldojaramillo@gmail.com" class="cta-button">Contáctanos</a>
+    </header>
 
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $nombre = $_POST['nombre'];
-        $email = $_POST['email'];
-        $mensaje = $_POST['mensaje'];
-        
-        $destinatario = 'tucorreo@gmail.com';
-        $asunto = 'Mensaje de contacto desde tu sitio web';
-        $cuerpoMensaje = "Nombre: $nombre\n";
-        $cuerpoMensaje .= "Email: $email\n";
-        $cuerpoMensaje .= "Mensaje: $mensaje\n";
-        
-        // Envía el correo
-        mail($destinatario, $asunto, $cuerpoMensaje);
-        
-        echo "<p>¡Gracias! Tu mensaje ha sido enviado.</p>";
-    }
-    ?>
+    <section class="image-section">
+        <img src="https://i.imgur.com/jPy2AiF.jpg" alt="Osadía Vivaldi">
+    </section>
+
+    <footer>
+        <p>Todos los derechos reservados &copy; 2024 Osadía Vivaldi</p>
+    </footer>
 </body>
 </html>
