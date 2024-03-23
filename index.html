@@ -2,93 +2,36 @@
 <html>
 <head>
     <title>Osadía Vivaldi: La Esencia del Bienestar</title>
-    <meta property="og:title" content="Osadía Vivaldi: La Esencia del Bienestar">
-    <meta property="og:description" content="Descubre la innovación y el bienestar integral en Osadía Vivaldi, un faro de calidad y sostenibilidad.">
-    <meta property="og:image" content="https://i.imgur.com/jPy2AiF.jpg">
-    <meta property="og:url" content="https://tu-sitio-web.com">
-    <meta property="og:type" content="website">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            text-align: center;
-            background: linear-gradient(to right, #FF7F00, #FF7F00);
-        }
-
-        header {
-            background: linear-gradient(to right, #FF7F00, #000);
-            padding: 50px 0;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin: 0 auto;
-            max-width: 800px;
-            background-color: rgba(255, 255, 255, 0.9);
-            color: #333;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        footer {
-            background: linear-gradient(to right, #000, #FF7F00);
-            color: #fff;
-            padding: 20px 0;
-        }
-
-        .testimonial {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-
-        .contact-form {
-            margin-top: 20px;
-        }
-
-        .cta-button {
-            background-color: #FF7F00;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-
-        .blog-section {
-            background-color: #FF7F00;
-            color: #fff;
-            padding…
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Osadía Vivaldi</h1>
-    </header>
-    
-    <p>Descubre la innovación y el bienestar integral en Osadía Vivaldi, un faro de calidad y sostenibilidad.</p>
+    <h1>Contacto</h1>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje"></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
 
-    <div class="contact-form">
-        <form action="mailto:leopoldojaramillo@gmail.com" method="post" enctype="text/plain">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje"></textarea><br>
-            <input type="submit" value="Enviar">
-        </form>
-    </div>
-
-    <footer>
-        <p class="testimonial">"La mejor experiencia de bienestar que he tenido. ¡Altamente recomendado!"</p>
-        <a href="#" class="cta-button">Suscríbete</a>
-    </footer>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $nombre = $_POST['nombre'];
+        $email = $_POST['email'];
+        $mensaje = $_POST['mensaje'];
+        
+        $destinatario = 'tucorreo@gmail.com';
+        $asunto = 'Mensaje de contacto desde tu sitio web';
+        $cuerpoMensaje = "Nombre: $nombre\n";
+        $cuerpoMensaje .= "Email: $email\n";
+        $cuerpoMensaje .= "Mensaje: $mensaje\n";
+        
+        // Envía el correo
+        mail($destinatario, $asunto, $cuerpoMensaje);
+        
+        echo "<p>¡Gracias! Tu mensaje ha sido enviado.</p>";
+    }
+    ?>
 </body>
 </html>
