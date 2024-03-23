@@ -7,9 +7,11 @@
     <meta property="og:image" content="https://i.imgur.com/jPy2AiF.jpg">
     <meta property="og:url" content="https://tu-sitio-web.com">
     <meta property="og:type" content="website">
+    <meta property="og:image:width" content="120"> <!-- Ancho deseado de la miniatura -->
+    <meta property="og:image:height" content="120"> <!-- Alto deseado de la miniatura -->
     <style>
         body {
-            font-family: 'Roboto', sans-serif; /* Ejemplo de fuente personalizada */
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
@@ -38,7 +40,7 @@
             color: #333;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         footer {
@@ -50,12 +52,17 @@
         .testimonial {
             font-style: italic;
             margin-bottom: 20px;
-            color: #FF7F00; /* Cambio de color */
+            color: #FF7F00;
         }
 
         .cta-button {
             background-color: #FF7F00;
             color: #fff; 
+        }
+
+        .logo {
+            max-width: 80px; /* Tamaño deseado de la imagen */
+            margin-top: 20px; /* Espacio superior */
         }
     </style>
 </head>
